@@ -22,9 +22,14 @@
 }
 
 @media only screen and (max-width: 720px) {
-
+  .todoList{
+    padding: 2rem;
+    }
   .todoApp{
     width: 100vw;
     padding: 5rem;
+  }
+  .Addtask{
+    margin-top: 15rem;
   }
 }

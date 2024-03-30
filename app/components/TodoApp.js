@@ -29,7 +29,7 @@ class TodoApp extends Component {
         return (
             <div className='main h-screen flex w-full justify-center'>
                 <div className='todoApp w-2/5 p-40 bg-regal-blue'>
-                    <h1 className='text-text font-medium text-2xl'>Add Task</h1>
+                    <h1 className='Addtask text-text font-medium text-2xl'>Add Task</h1>
                     <form onSubmit={this.handleSubmit} className='flex flex-col mt-8'>
                         <label className='text-base'>Task Title</label>
                         <input
