@@ -58,7 +58,7 @@ const TodoList = () => {
                 <input
                   type="text"
                   value={editedText}
-                  onChange={e => setEditedText(e.target.value)}
+                  onChange={event => setEditedText(event.target.value)}
                 />
                  <button className='bg-red text-white px-2 mx-2 rounded float-right' onClick={handleCancelEdit}>Cancel</button>
                 <button className='bg-text text-white px-2 mx-2 rounded float-right' onClick={() => handleSaveEdit(todo.id)}>Save</button>          

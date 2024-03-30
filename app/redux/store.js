@@ -1,14 +1,15 @@
 "use client"
-import { createStore } from 'redux';
+import { createStore,applyMiddleware } from 'redux';
 import todoReducer from './todoReducer';
 import { loadState, saveState } from '../utils/SaveTodoslocal';
+import {thunk} from "redux-thunk"
 
 const persistedState = loadState();
-
+const middleware=[thunk];
 const store = createStore(
   todoReducer,
   persistedState,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  applyMiddleware(...middleware)
 );
 
 store.subscribe(() => {
